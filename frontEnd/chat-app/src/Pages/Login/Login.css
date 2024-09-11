@@ -1,0 +1,32 @@
+.formBody{
+    backdrop-filter:blur(15px);
+    border :5px solid rgb(255, 255, 255); 
+}
+
+.in::placeholder{
+    color: whitesmoke;
+}
+.login-btn{
+    border: 4px solid;
+    color: white;
+    border-image: linear-gradient(45deg, red, blue, green, yellow) 1;
+    animation: animate-border 4s linear infinite;
+}
+@keyframes animate-border {
+    0% {
+        border-image: linear-gradient(45deg, red, blue, green, yellow) 1;
+      }
+      25% {
+        border-image: linear-gradient(45deg, yellow, red, blue, green) 1;
+        
+      }
+      50% {
+        border-image: linear-gradient(45deg, green, yellow, red, blue) 1;
+      }
+      75% {
+        border-image: linear-gradient(45deg, blue, green, yellow, red) 1;
+      }
+      100% {
+        border-image: linear-gradient(45deg, red, blue, green, yellow) 1;
+      }
+}

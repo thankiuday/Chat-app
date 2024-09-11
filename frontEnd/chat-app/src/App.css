@@ -1,0 +1,24 @@
+.mainDiv{
+  height: 100vh;
+  width: 100vw;
+  background-image: url('./assets/bg2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  backdrop-filter: blur(12px);
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+::-webkit-scrollbar-track{
+  background: rgb(73, 68, 68);
+}
+::-webkit-scrollbar-thumb{
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: rgb(63, 52, 52);
+}

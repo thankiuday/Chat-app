@@ -1,0 +1,57 @@
+.sideBar {
+    background-image: url('./assets/bg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(40px);
+    padding: 10px;
+    border: 5px solid transparent;
+    border-image: linear-gradient(45deg, red, blue, green, yellow) 1;
+    animation: animate-border 4s linear infinite;
+    
+}
+.header{
+    border-bottom: 5px solid;
+    border-image: linear-gradient(45deg, red, blue, green, yellow) 1;
+    animation: animate-border 4s linear infinite;
+}
+.logOutButton{
+    border: 2px solid transparent;
+    border-radius: 10px;
+    border-image: linear-gradient(45deg, red, blue, green, yellow) 1;
+    animation: animate-border 4s linear infinite;
+}
+.logOutButton:hover{
+    background-color: transparent !important;
+}
+/* .userRow:hover{
+    background-color:black ;
+    border-image: linear-gradient(45deg, red, blue, green, yellow) 1;
+    animation: animate-border 4s linear infinite;
+    border: 2px solid;
+} */
+.conversation{
+    padding: 20px;
+    border: 5px solid transparent;
+    border-image: linear-gradient(45deg, red, blue, green, yellow) 1;
+    animation: animate-border 4s linear infinite;
+    backdrop-filter: blur(40px);
+}
+@keyframes animate-border {
+    0% {
+        border-image: linear-gradient(45deg, red, blue, green, yellow) 1;
+      }
+      25% {
+        border-image: linear-gradient(45deg, yellow, red, blue, green) 1;
+      }
+      50% {
+        border-image: linear-gradient(45deg, green, yellow, red, blue) 1;
+      }
+      75% {
+        border-image: linear-gradient(45deg, blue, green, yellow, red) 1;
+      }
+      100% {
+        border-image: linear-gradient(45deg, red, blue, green, yellow) 1;
+      }
+}
